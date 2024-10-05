@@ -1,0 +1,27 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert_rentals
+      author: artem_klishch
+      changes:
+        - insert:
+            tableName: rentals
+            columns:
+              - column: { name: rental_date, value: "2024-09-14" }
+              - column: { name: return_date, value: "2024-11-14" }
+              - column: { name: car_id, value: "1" }
+              - column: { name: user_id, value: "1" }
+        - insert:
+            tableName: rentals
+            columns:
+              - column: { name: rental_date, value: "2024-05-14" }
+              - column: { name: return_date, value: "2024-06-12" }
+              - column: { name: actual_return_date, value: "2024-07-10" }
+              - column: { name: car_id, value: "2" }
+              - column: { name: user_id, value: "1" }
+        - insert:
+            tableName: rentals
+            columns:
+              - column: { name: rental_date, value: "2024-08-20" }
+              - column: { name: return_date, value: "2025-06-08" }
+              - column: { name: car_id, value: "3" }
+              - column: { name: user_id, value: "2" }

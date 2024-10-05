@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-payments
+      author: artem_klishch
+      changes:
+        - insert:
+            tableName: payments
+            columns:
+              - column: { name: status, value: "PAID" }
+              - column: { name: type, value: "PAYMENT" }
+              - column: { name: rental_id, value: "1" }
+              - column: { name: session, value: "https://some-session-url-1.com" }
+              - column: { name: session_id, value: "some-session-id-1" }
+              - column: { name: amount, value: "1050" }
+        - insert:
+            tableName: payments
+            columns:
+              - column: { name: status, value: "PAID" }
+              - column: { name: type, value: "PAYMENT" }
+              - column: { name: rental_id, value: "2" }
+              - column: { name: session, value: "https://some-session-url-2.com" }
+              - column: { name: session_id, value: "some-session-id-2" }
+              - column: { name: amount, value: "2050" }
+        - insert:
+            tableName: payments
+            columns:
+              - column: { name: status, value: "PAID" }
+              - column: { name: type, value: "FINE" }
+              - column: { name: rental_id, value: "3" }
+              - column: { name: session, value: "https://some-session-url-3.com" }
+              - column: { name: session_id, value: "some-session-id-3" }
+              - column: { name: amount, value: "2500" }

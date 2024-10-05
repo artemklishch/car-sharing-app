@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-cars
+      author: artem_klishch
+      changes:
+        - insert:
+            tableName: cars
+            columns:
+              - column: { name: model, value: "BMW-600" }
+              - column: { name: brand, value: "Mercedes Benz" }
+              - column: { name: type, value: "UNIVERSAL" }
+              - column: { name: inventory, value: "10" }
+              - column: { name: daily_fee, value: "100.00" }
+        - insert:
+            tableName: cars
+            columns:
+              - column: { name: model, value: "Audy Cool" }
+              - column: { name: brand, value: "AUDI" }
+              - column: { name: type, value: "SEDAN" }
+              - column: { name: inventory, value: "15" }
+              - column: { name: daily_fee, value: "800.50" }
+        - insert:
+            tableName: cars
+            columns:
+              - column: { name: model, value: "Geep Cheerocky" }
+              - column: { name: brand, value: "Geep" }
+              - column: { name: type, value: "SUV" }
+              - column: { name: inventory, value: "8" }
+              - column: { name: daily_fee, value: "900.00" }

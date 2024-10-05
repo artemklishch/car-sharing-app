@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-users
+      author: artem_klishch
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: email, value: "bob@gmail.com" }
+              - column: { name: password, value: "$2a$10$MftFdz42cvwYagDZhqRVb.tqq/1iIFaYRxOvEOhltQ/AseB6RES3O" }
+              #                password is "12345678"
+              - column: { name: first_name, value: "Bob" }
+              - column: { name: last_name, value: "Marley" }
+              - column: { name: role, value: "CUSTOMER" }
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: email, value: "john@gmail.com" }
+              - column: { name: password, value: "$2a$10$MftFdz42cvwYagDZhqRVb.tqq/1iIFaYRxOvEOhltQ/AseB6RES3O" }
+              #                password is "12345678"
+              - column: { name: first_name, value: "John" }
+              - column: { name: last_name, value: "BonJovi" }
+              - column: { name: role, value: "CUSTOMER" }
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: email, value: "admin@gmail.com" }
+              - column: { name: password, value: "$2a$10$MftFdz42cvwYagDZhqRVb.tqq/1iIFaYRxOvEOhltQ/AseB6RES3O" }
+              #                password is "12345678"
+              - column: { name: first_name, value: "Admin" }
+              - column: { name: last_name, value: "Adminych" }
+              - column: { name: role, value: "MANAGER" }
