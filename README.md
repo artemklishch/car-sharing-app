@@ -1,6 +1,6 @@
 # Car sharing application
 This application is supposed to be used for renting cars.
-Admin users have rights to uploads information about cars and normal users can take cars for rent.
+Admin users have rights to upload information about cars and normal users can take cars for rent.
 Application contains payment mechanism and telegram bot to report admin about main operations.
 
 ## Technologies
