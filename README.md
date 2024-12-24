@@ -62,9 +62,6 @@ Before launch the command to run the docker container you should have the Docker
 ### Below you can find diagram to run the project in the Docker container:
 ![Server Flow Diagram](src/main/java/com/example/carsharingapp/assets/launch-app-diagram.svg)
 
-### Video instruction to run the app:
-[![Watch the video](https://img.freepik.com/free-vector/isometric-cms-concept_23-2148807389.jpg)](https://www.loom.com/share/0bd185598ca54570af9b3822cdba202e?sid=6b7b035b-b41b-48d7-8493-8e93fc679187)
-
 ## Project features
 This project is run with the Dockerfile and docker compose.
 Except normal controllers,services and repositories this project contains: logic to invoke functions in according to
